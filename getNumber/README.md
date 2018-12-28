@@ -4,13 +4,16 @@
 
 基于tensorflow建立的CNN模型，使用MNIST手写数字数据集训练的数字识别工具，封装成库ImgProcess，提供简单易用的验证码识别API，从而方便调用。
 
-### 安装和使用
+### 安装和卸载
 
-将项目克隆，使用pip安装
+将项目克隆
 
-`sudo pip install setup.py`
+`sudo python setup.py install`
 
-### 例子
+使用pip卸载
+`sudo pip uninstall ImgProcess`
+
+### 使用
 
 ```python
 from ImgProcess import process_img
