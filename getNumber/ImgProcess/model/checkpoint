@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/cris/AI/save/model.ckpt"
+all_model_checkpoint_paths: "/home/cris/AI/save/model.ckpt"
