@@ -2,6 +2,7 @@
 
 import copy
 import sys
+import os
 
 import cv2
 import matplotlib.pyplot as plt
@@ -65,7 +66,7 @@ def cut(img):
     return image
 
 
-def imageprepare(img):
+def image_prepare(img):
     #导入自己的图片地址
     #file_name='img/red6.jpg'
     #file_name = sys.argv[1]
@@ -127,7 +128,10 @@ def imageprepare(img):
     sess = tf.InteractiveSession()
     saver = tf.train.Saver()
     tf.global_variables_initializer().run()
-    saver.restore(sess, "ImgProcess/model/model.ckpt")
+    # 找到文件父级目录
+    model_path = os.path.dirname(os.path.abspath(__file__)) + "/model/model.ckpt"
+    # print model_path
+    saver.restore(sess, model_path)
     #print("W1:", sess.run(conv1_weights)) # 打印v1、v2的值一会读取之后对比
     #print("W2:", sess.run(conv1_biases))
     prediction=tf.argmax(y_conv,1)
@@ -150,9 +154,9 @@ def process_img(filedir):
     # 裁剪
 
     image = cut(thresh)
-    result = imageprepare(image)
+    result = image_prepare(image)
     return result
 
 
-#if __name__ == "__main__":
-#    process_img('ImgProcess/img/white8.jpg')
+if __name__ == "__main__":
+    print process_img('ImgProcess/img/white8.jpg')

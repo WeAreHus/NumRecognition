@@ -6,14 +6,15 @@
 
 ### 安装和卸载
 
-将项目克隆
+将项目克隆后
 
-`sudo python setup.py install`
+`sudo python setup.py install`即可
 
 使用pip卸载
+
 `sudo pip uninstall ImgProcess`
 
-### 使用
+### 例子
 
 ```python
 from ImgProcess import process_img
