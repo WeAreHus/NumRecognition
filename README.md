@@ -115,7 +115,7 @@ print(result)
    pool1 = tf.nn.max_pool(relu1, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')  
    ```
 
-   ![](https://imgsa.baidu.com/forum/w%3D580/sign=141eec2718ce36d3a20483380af23a24/ce2836d3d539b60075581f4ae450352ac45cb79b.jpg)
+   ![](http://imgsrc.baidu.com/forum/pic/item/ce2836d3d539b60075581f4ae450352ac45cb79b.jpg)
 
    max_pool的作用:
 
@@ -205,7 +205,7 @@ print(result)
 >  2.安装opencv第三方库,依次将图片进行灰度处理,降噪,二值化,最后进行剪裁图片,在建立神经网络模型的时候我们已控制图片的大小为28*28,通过opencv的剪裁功能进行控制图片的大小,,并进行保存
 * 原图片:
 
-![](https://imgsa.baidu.com/forum/w%3D580/sign=620167178ccb39dbc1c0675ee01409a7/5a2d39dbb6fd52666fd33fe9a618972bd60736bd.jpg)
+![](http://imgsrc.baidu.com/forum/pic/item/5a2d39dbb6fd52666fd33fe9a618972bd60736bd.jpg)
 
 
 
@@ -255,7 +255,7 @@ def cut(img):
 
 处理后:
 
-![](https://imgsa.baidu.com/forum/w%3D580/sign=2c9573fba1af2eddd4f149e1bd110102/77492edda3cc7cd9d78c39243401213fba0e9194.jpg)
+![](http://imgsrc.baidu.com/forum/pic/item/77492edda3cc7cd9d78c39243401213fba0e9194.jpg)
 
 -------
 
@@ -346,9 +346,11 @@ setup(
 
 ### 运行效果展示
 
-![](https://imgsa.baidu.com/forum/w%3D580/sign=1eb748d3df1b0ef46ce89856edc551a1/09fd0ef41bd5ad6e67b164178ccb39dbb4fd3ced.jpg)
+![](http://imgsrc.baidu.com/forum/pic/item/09fd0ef41bd5ad6e67b164178ccb39dbb4fd3ced.jpg)
 
-![](https://imgsa.baidu.com/forum/w%3D580/sign=2dca4d4493510fb37819779fe932c893/45b70fb30f2442a71234fe58dc43ad4bd013027f.jpg)
+![](http://imgsrc.baidu.com/forum/pic/item/45b70fb30f2442a71234fe58dc43ad4bd013027f.jpg)
+
+
 
 
 
