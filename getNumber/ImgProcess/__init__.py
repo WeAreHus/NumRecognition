@@ -37,7 +37,7 @@ def median_Blur(img, m=3):
 
 
 # 二值化处理
-def thresh_old(img, l=100, h=255):
+def thresh_old(img, l=150, h=255):
     ret,im_fixed=cv2.threshold(img,l,h,cv2.THRESH_BINARY)
     #im_fixed = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 21, 1)
     return im_fixed
